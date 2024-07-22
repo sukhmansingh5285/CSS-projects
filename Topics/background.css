@@ -1,0 +1,25 @@
+/* background-repeat */
+
+.ir-relevant{
+  background: url();
+  background-repeat: repeat/no-repeat/repeat-x/repeat-y; 
+  /* 
+  repeat: background image is repeated both horizontally and vertically
+  repeat-x: background image is repeated only horizontally
+  repeat-y: background image is repeated only vertically
+  no-repeat: background image dosen't repeat 
+  */
+  background-size: auto/contain/cover;
+  /*
+  cover: background image will cover all container, and cutting it's own part to maintain it's aspect ratio
+  contain: background image fit into the container completely maintaining it's aspect ratio, but leaving container's space empty if aspect ratio don't match
+  auto: background image will maintain it's size, and if size of container is smaller than it will clip off rest of it's size
+  */
+  background-position: left/right/top/bottom/center;
+  /*
+  left: aligns image left to the container
+  right: aligns image right to the container
+  top: aligns image top to the container
+  bottom: aligns image bottom to the contianer
+  */
+}
