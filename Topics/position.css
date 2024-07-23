@@ -1,0 +1,38 @@
+.parent{
+  position: relative;
+
+  /*relative: use (top,bottom,left,right) work relative to the container*/
+
+  /*if absolute, child looks for the parents if they have position:relative, and if they do it works relative to them oterwise
+  it gets relative directly to the */
+}
+
+.child{
+  position: absolute/relative/sticky/fixed/static; /*top, right, bottom, left properties are unlocked*/
+  /*
+  absolute: use (top, bottom, left, right) it gets placed to the other dimension and other items
+  behave like that element never existed. (relative to the next position:relative parent, otherwise relative to the html/body)
+
+  relative: use (top,bottom,left,right) work relative to the container
+
+  static (default) : don't have access to (bottom,left,right,top, z-index) properties 
+
+  fixed: use(top,bottom,lift,right). item gets fixed at that place, even if we scroll (relative to html/body)
+
+  sticky: use(top(most of the time))item gets stick to the screen until the container is on the screen (relative to container)
+  
+  */
+
+  top: 0px;
+  left: 3px;
+  right: 3px;
+  bottom: 0px;
+
+  z-index: -1;  /*to put it down the container */
+  opacity: 0.3; /* to make something transparent or opaque */
+}
+
+
+
+/*Note-> relative has different meaning in parent and child, in child it works relative to it's parent,
+         and in */

@@ -1,0 +1,6 @@
+body{
+  overflow-x: hidden; /*cuts out the overflowing items, removes scrollbars*/
+}
+::-webkit-scrollbar{  /* removes all the scrollbars in body*/
+  display: none; 
+} 
