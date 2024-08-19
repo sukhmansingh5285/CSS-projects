@@ -1,0 +1,61 @@
+/* 
+Inline Elements
+Do not start on a new line: Inline elements sit next to each other horizontally.
+Width and height: Inline elements only take up as much width as necessary and do not respect width and height properties.
+Padding, margin, and border: Only horizontal padding, margin, and border are respected. Vertical padding, margin, and border do not affect the layout.
+Flow: Inline elements flow within a line of text and can wrap to the next line if there is not enough space.
+
+<a>: Anchor
+<span>: Span
+<img>: Image
+<strong>: Strong (bold text)
+<em>: Emphasis (italic text)
+<b>: Bold text
+<i>: Italic text
+<u>: Underlined text
+<small>: Small text
+<label>: Label for form elements
+
+
+
+
+Block Elements
+Start on a new line: Block elements always start on a new line and take up the full width available by default.
+Width and height: Block elements respect width and height properties.
+Padding, margin, and border: All padding, margin, and border properties are respected and affect the layout.
+Flow: Block elements stack vertically, one after the other.
+
+<div>: Division
+<p>: Paragraph
+<h1> to <h6>: Headings
+<ul>: Unordered list
+<ol>: Ordered list
+<li>: List item
+<table>: Table
+<section>: Section
+<article>: Article
+<header>: Header
+<footer>: Footer
+<nav>: Navigation
+<form>: Form 
+
+
+
+
+CSS Properties for Inline and Block Elements
+
+Inline Elements
+display: inline;
+vertical-align: Controls the vertical alignment of inline elements.
+text-align: Controls the horizontal alignment of text within an inline element.
+line-height: Controls the height of the line box containing the inline element.
+
+Block Elements
+display: block;
+width: Sets the width of the block element.
+height: Sets the height of the block element.
+margin: Sets the margin around the block element.
+padding: Sets the padding inside the block element.
+border: Sets the border around the block element.
+text-align: Controls the horizontal alignment of text within the block element.
+*/
