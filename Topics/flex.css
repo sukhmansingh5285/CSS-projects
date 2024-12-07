@@ -1,0 +1,66 @@
+/*
+flex-wrap -> it unlocks the property 'align-content'
+*/
+
+.cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 1em;
+}
+
+
+.item{
+  flex-grow: 1;   /*rate at which item can grow*/
+  flex-shrink: 5; /*item will shrink a lot faster*/
+  flex-basis: 300px;  /*overwrites the property (width in this case)*/
+  flex: 1 5 300px;
+
+  align-self: center /*kinda like align-items, but only for this element*/;
+
+  order: -1; /*to palce the order of the elements in the flexbox despite where they are in html (here number will work relative to the rest of the items)*/
+}
+
+
+/**************************** above things in detail ****************************************************/
+
+/* order property  */
+.item {
+  order: -1; /* Can be any integer: negative, 0, or positive */ 
+     /*lower number moves towards the front, 0 is defalut, higher numbers move items towards the end*/
+}
+
+/* flex-grow */
+.item {
+  flex-grow: 1; /* Can be any non-negative number */
+}
+.item1 { flex-grow: 1; } /* Gets 25% of extra space */
+.item2 { flex-grow: 2; } /* Gets 50% of extra space */
+.item3 { flex-grow: 1; } /* Gets 25% of extra space */
+
+/*flex-shrink*/
+.item {
+  flex-shrink: 5; /* Can be any non-negative number */
+        /*0 won't shrink, 1 default shrink rate, 5 shrinks 5 times faster than itmes with flex-shrink:1*/
+}
+
+/* flex-basis */
+.item {
+  flex-basis: 300px; /* Can be px, %, em, rem, etc. sets initial main size of flex item*/
+            /* Common values:
+            auto: Uses item's content size
+            0: Makes item purely flexible
+            300px: Sets specific initial size
+            50%: Relative to container */
+}
+
+/* common patterns */
+.item{
+  flex: 1;          /* 1 1 0% */
+  flex: auto;       /* 1 1 auto */
+  flex: none;       /* 0 0 auto */
+  flex: 0 auto;     /* 0 1 auto */
+}
