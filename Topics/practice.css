@@ -1,0 +1,18 @@
+/* gap only work in flex and graph */
+
+.g {
+  border: 4px solid yellow;
+  
+  /* Prevent overflow */
+  overflow: hidden;           /* Clips overflow */
+  word-wrap: break-word;     /* Breaks long words */
+  word-break: break-all;     /* Breaks words at any character */
+  
+  /* Optional: Add ellipsis */
+  white-space: nowrap;       /* Keep text in single line */
+  text-overflow: ellipsis;   /* Show ... for overflow */
+}
+
+.a input {
+  box-sizing: border-box; /* Include padding/border in width */
+}

@@ -11,7 +11,7 @@
   position: absolute/relative/sticky/fixed/static; /*top, right, bottom, left properties are unlocked*/
   /*
   absolute: use (top, bottom, left, right) it gets placed to the other dimension and other items
-  behave like that element never existed. (relative to the next position:relative parent, otherwise relative to the html/body)
+  behave like that element never existed. (relative to the next positioned element, otherwise relative to the html/body)
 
   relative: use (top,bottom,left,right) work relative to the container
 
@@ -34,5 +34,3 @@
 
 
 
-/*Note-> relative has different meaning in parent and child, in child it works relative to it's parent,
-         and in */
