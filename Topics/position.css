@@ -11,13 +11,13 @@
   position: absolute/relative/sticky/fixed/static; /*top, right, bottom, left properties are unlocked*/
   /*
   absolute: use (top, bottom, left, right) it gets placed to the other dimension and other items
-  behave like that element never existed. (relative to the next positioned element, otherwise relative to the html/body)
+  behave like that element never existed. (relative to the nearest positioned ancestor, otherwise relative to the html/body)
 
-  relative: use (top,bottom,left,right) work relative to the container
+  relative: use (top,bottom,left,right) work relative to it's normal position
 
   static (default) : don't have access to (bottom,left,right,top, z-index) properties 
 
-  fixed: use(top,bottom,lift,right). item gets fixed at that place, even if we scroll (relative to html/body)
+  fixed: use(top,bottom,lift,right). item gets fixed at that place, even if we scroll (relative to viewport)
 
   sticky: use(top(most of the time))item gets stick to the screen until the container is on the screen (relative to container)
   
